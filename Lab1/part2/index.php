@@ -19,6 +19,7 @@ if(!empty($_POST)){
         $data = json_decode($response->getBody(), true);
         $current_time = date("F g:i a");
         $current_time2 = date(" jS \ F , Y ");
+        
 
         $icon = "https://openweathermap.org/img/wn/". $data["weather"][0]["icon"] . "@2x.png";        
         if(!empty($data)){
